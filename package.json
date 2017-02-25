@@ -1,0 +1,27 @@
+{
+  "name": "academic_web_crawler",
+  "version": "0.0.1",
+  "description": "A web crawler targeted at finding resources about academics (authors, journals, conferences, research papers, institutions)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ethanwillis/academic_web_crawler.git"
+  },
+  "keywords": [
+    "academia",
+    "web",
+    "crawler",
+    "crawler",
+    "academic",
+    "graph"
+  ],
+  "author": "Ethan Willis",
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/ethanwillis/academic_web_crawler/issues"
+  },
+  "homepage": "https://github.com/ethanwillis/academic_web_crawler#readme"
+}
