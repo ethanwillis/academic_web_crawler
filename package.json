@@ -1,0 +1,11 @@
+{
+  "name": "academic_crawler",
+  "version": "1.0.0",
+  "description": "An open source focused academic web crawler",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ethan Willis",
+  "license": "AGPL-3.0"
+}
