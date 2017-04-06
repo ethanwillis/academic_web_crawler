@@ -2,10 +2,25 @@
   "name": "academic_crawler",
   "version": "1.0.0",
   "description": "An open source focused academic web crawler",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --timeout 15000",
+    "build": "rollup ./src/index.js --output dist/bundle.js --format cjs && babel dist/bundle.js -o dist/index.js && rm dist/bundle.js",
+    "build_docts": "jsdoc -r ./src/ -d docs/"
   },
   "author": "Ethan Willis",
-  "license": "AGPL-3.0"
+  "license": "AGPL-3.0",
+  "dependencies": {
+    "cheerio": "^0.22.0",
+    "cli": "^1.0.1",
+    "simplecrawler": "^1.1.1",
+    "unix-timestamp": "^0.2.0"
+  },
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.24.0",
+    "jsdoc": "^3.4.3",
+    "mocha": "^3.2.0",
+    "rollup": "^0.41.6"
+  }
 }
