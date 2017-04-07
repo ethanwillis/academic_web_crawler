@@ -10,6 +10,22 @@
   },
   "author": "Ethan Willis",
   "license": "AGPL-3.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ethanwillis/academic_web_crawler.git"
+  },
+  "keywords": [
+    "academia",
+    "web",
+    "crawler",
+    "crawler",
+    "academic",
+    "graph"
+  ],
+  "bugs": {
+    "url": "https://github.com/ethanwillis/academic_web_crawler/issues"
+  },
+  "homepage": "https://github.com/ethanwillis/academic_web_crawler#readme",
   "dependencies": {
     "bson": "^1.0.4",
     "bson-ext": "^1.0.5",
