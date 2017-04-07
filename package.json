@@ -11,8 +11,12 @@
   "author": "Ethan Willis",
   "license": "AGPL-3.0",
   "dependencies": {
+    "bson": "^1.0.4",
+    "bson-ext": "^1.0.5",
     "cheerio": "^0.22.0",
     "cli": "^1.0.1",
+    "libxmljs": "^0.18.4",
+    "mongodb": "^2.2.25",
     "simplecrawler": "^1.1.1",
     "unix-timestamp": "^0.2.0"
   },
