@@ -19,15 +19,18 @@ var settings = {
 	application_settings: {
 		return_mime_types: ["application/pdf"],
 		download_folder: "./pdf_downloads",
-		mongo_url: "mongodb://crawlerdb.fate:27017/crawlerdb"
+		mongo_url: "mongodb://localhost:27018/crawlerdb"
 	},
 	urls: [
-		"http://journals.plos.org/plosone/lockss-manifest",
-		"http://www.ijbs.com/ms/archive",
-		"https://peerj.com/archives/",
-		"https://peerj.com/archives-preprints/"
+		"http://www.ijbs.com/ms/archive"
 	]
 }
+
+/*
+"http://journals.plos.org/plosone/lockss-manifest",
+"https://peerj.com/archives/",
+"https://peerj.com/archives-preprints/"
+*/
 
 
 
@@ -47,7 +50,7 @@ var crawl_site = function(url, crawler_settings, app_settings, db_client, callba
 
 	crawler.addFetchCondition(function(queueItem, referrerQueueItem, callback) {
 		// We only ever want to move one step away from example.com, so if
-		// referrer queue item reports a different domain, don't proceed 
+		// referrer queue item reports a different domain, don't proceed
 		callback(null, referrerQueueItem.host === crawler.host);
 	});
 
